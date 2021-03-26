@@ -8,8 +8,7 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div id="me">
-    <p>Desenvolvido por Lucas alves</p>
+  <div id="about-me">
     <a href="https://www.linkedin.com/in/alveslucano/">
       <img src="https://icons.iconarchive.com/icons/danleech/simple/256/linkedin-icon.png" width="32px">
     </a>
@@ -19,21 +18,30 @@
     <a href="https://github.com/luccasalves">
       <img src="https://icons.iconarchive.com/icons/danleech/simple/256/github-icon.png" width="32px">
     </a>
+    <p>Desenvolvido por Lucas alves</p>
+  </div>
+  
+  <div class="container">
 
-  </div>
-  
-  <a id="alura" href="https://alura.com.br/" target="_blank">
-    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-    </a>
-  
-  <div class="box">
     <h1>Conversor de temperatura: 🌡️</h1>
-    
-      <input type="number" placeholder="Cº" id="cel"> 
-      <input type="button" value="Converter" id="btn-converter-c">
-      <h3 id="resultado">A coversão de Celsius <br>para fahrenheit é:</h3>
-    
-  </div>
+        <select name="select-one" id="select-one">
+          <option>Selecione</option>
+          <option>ºC celsius</option>
+          <option>ºF fahrenheit</option>
+          <option>ºK kelvin</option>
+        </select>
+        <input type="number" class="opt">
+  
+      <select name="select-one" id="select-one">
+        <option >Selecione</option>
+        <option>ºC celsius</option>
+        <option>ºF fahrenheit</option>
+        <option>ºK kelvin</option>
+      </select>
+       <input type="number" class="opt">
+      <input type="button" value="Converter" id="btn-converter">
+
+  </div>  
 </body>
 <script src="./script.js"></script>
 </html>
