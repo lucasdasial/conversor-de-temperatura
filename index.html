@@ -24,24 +24,25 @@
   <div class="container">
 
     <h1>Conversor de temperatura: 🌡️</h1>
-        <select name="select-one" id="select-one">
-          <option>Selecione</option>
-          <option>ºC celsius</option>
-          <option>ºF fahrenheit</option>
-          <option>ºK kelvin</option>
+        <select id="select-one" class="opt">
+          <option >De:</option>
+          <option value="1" class="c">ºC celsius</option>
+          <option value="2"class="f">ºF fahrenheit</option>
+          <option value="3" class="k">ºK kelvin</option>
         </select>
-        <input type="number" class="opt">
+        
   
-      <select name="select-one" id="select-one">
-        <option >Selecione</option>
-        <option>ºC celsius</option>
-        <option>ºF fahrenheit</option>
-        <option>ºK kelvin</option>
+      <select id="select-two" class="opt">
+        <option >Para:</option>
+        <option value="4" class="c">ºC celsius</option>
+        <option value="5" class="f">ºF fahrenheit</option>
+        <option value="6"class="k">ºK kelvin</option>
       </select>
-       <input type="number" class="opt">
+      <input type="number" class="opt" id="value">
       <input type="button" value="Converter" id="btn-converter">
 
   </div>  
+  <h2 id="resultado">O resultado aparecerar aqui!</h2>
 </body>
 <script src="./script.js"></script>
 </html>
