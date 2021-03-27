@@ -16,7 +16,7 @@ body{
 }
 .container{
   width: 350px;
-  height: 200px;
+  height: 150px;
   border: solid 3px white;;
   border-radius: 25px 5px;
   box-shadow: rgb(0, 255, 157) 5px 5px 5px;
