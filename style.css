@@ -20,6 +20,10 @@ body{
   border: solid 3px white;;
   border-radius: 25px 5px;
   box-shadow: rgb(0, 255, 157) 5px 5px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items:flex-start;
 }
 h1{
   font-size: 25px;
@@ -27,7 +31,7 @@ h1{
 #medidaPrimaria, #medidaSecundaria, #entrada, #resultado{
   width: 130px;
   height: 30px;
-  margin: 2px;
+  
   border: solid 1px grey;
   border-radius: 5px 2px;
 }
