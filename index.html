@@ -24,15 +24,15 @@
   <div class="container">
 
     <h1>Conversor de temperatura: 🌡️</h1>
-        <select id="select-one" class="opt">
+        <select id="de" class="opt" onchange="de(this.value)">
           <option >De:</option>
-          <option value="1" class="c">ºC celsius</option>
-          <option value="2"class="f">ºF fahrenheit</option>
+          <option value="1">ºC celsius</option>
+          <option value="2">ºF fahrenheit</option>
           <option value="3" class="k">ºK kelvin</option>
         </select>
         
   
-      <select id="select-two" class="opt">
+      <select id="para" class="opt"onchange="para(this.value)">
         <option >Para:</option>
         <option value="4" class="c">ºC celsius</option>
         <option value="5" class="f">ºF fahrenheit</option>
