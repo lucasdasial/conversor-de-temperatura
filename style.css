@@ -1,65 +1,34 @@
-*{
-  outline: none; margin: 0; padding: 0; border:none;  
-}
+*{outline: none; border: none; box-sizing: border-box;}
 body{
   width: 100vw;
   height: 100vh;
   color: aliceblue;
   font-family:monospace;
-  background-color: rgb(147, 161, 161);
   background-image: url(https://www.viajarevida.com.br/wp-content/uploads/2020/04/7-curiosidades-sobre-o-polo-norte-a-aurora-boreal-e-um-dos-fenonemos-naturais-mais-lindos-do-mundo.jpg);
   background-size: cover;
   background-position: center;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-#about-me{
-  position: absolute;
-  top:20px;
-  text-align: center; 
-}
-
-.container{
-  width:315px;
-  min-height: 200px;
-  padding: 30px;
-  border: solid 2px;
+  background-repeat: no-repeat; 
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  margin-bottom: 10px;
-}
-.opt{
-  width: 100px;
-  height: 30px;
-  border-radius: 5px
-}
-#btn-converter{
-  width: 140px;
-  border-radius: 8px;
-  background-color: springgreen;
-  color: rgb(28, 59, 40);
-  font-size: 1rem;
-  font-weight: bold;
-  margin:2px;
  
 }
-#input-number{padding-left: 5px; width:95px}
-#btn-converter:active{
-  border: solid 2px rgb(28, 59, 40);
-  margin: 0;
-  position: relative;
-  top:2px
+.container{
+  width: 350px;
+  height: 150px;
+  border: solid 3px white;;
+  border-radius: 25px 5px;
+  box-shadow: rgb(0, 255, 157) 5px 5px 5px;
 }
-
-h2{
-  
-  color: rgb(255, 255, 255) ;
-  background-color: rgba(22, 22, 22, 0.6);
-  padding: 3px;
-  border-radius: 5px;
+h1{
+  font-size: 25px;
 }
+#medidaPrimaria, #medidaSecundaria, #entrada, #resultado{
+  width: 130px;
+  height: 30px;
+  margin: 2px;
+  border: solid 1px grey;
+  border-radius: 5px 2px;
+}
+#s{visibility: hidden;}

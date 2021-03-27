@@ -4,45 +4,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conversor</title>
+  <title>Conversor de temperatura</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div id="about-me">
-    <a href="https://www.linkedin.com/in/alveslucano/">
-      <img src="https://icons.iconarchive.com/icons/danleech/simple/256/linkedin-icon.png" width="32px">
-    </a>
-    <a href="https://twitter.com/oh_dasilva">
-      <img src="https://icons.iconarchive.com/icons/dakirby309/windows-8-metro/128/Web-Twitter-alt-2-Metro-icon.png" width="32px">
-    </a>
-    <a href="https://github.com/luccasalves">
-      <img src="https://icons.iconarchive.com/icons/danleech/simple/256/github-icon.png" width="32px">
-    </a>
-    <p>Desenvolvido por Lucas alves</p>
-  </div>
-  
-  <div class="container">
+    <div class="container">
+      <h1 class="conv-title">Conversor de temperatura</h1>
 
-    <h1>Conversor de temperatura: 🌡️</h1>
-        <select id="de" class="opt" onchange="de(this.value)">
-          <option >De:</option>
-          <option value="1">ºC celsius</option>
-          <option value="2">ºF fahrenheit</option>
-          <option value="3" class="k">ºK kelvin</option>
-        </select>
-        
-  
-      <select id="para" class="opt"onchange="para(this.value)">
-        <option >Para:</option>
-        <option value="4" class="c">ºC celsius</option>
-        <option value="5" class="f">ºF fahrenheit</option>
-        <option value="6"class="k">ºK kelvin</option>
+      <input type="text" placeholder="--De--"id="entrada">
+      <span >=</span>
+      <input type="text" placeholder="--Para--" id="resultado">
+
+      <select id="medidaPrimaria">
+          <option value="celsius">º Celsius </option>
+          <option value="fahren">º Fahrenhit</option>
+          <option value="kelvin">º Kelvin</option>
       </select>
-      <input type="number" class="opt" id="value">
-      <input type="button" value="Converter" id="btn-converter">
-
-  </div>  
-  <h2 id="resultado">O resultado aparecerar aqui!</h2>
+      <span id="s">o</span>
+      <select id="medidaSecundaria">
+          <option value="celsius">º Celsius</option>
+          <option value="fahren">º Fahrenhit</option>
+          <option value="kelvin">º Kelvin</option>
+      </select>
+    </div>
 </body>
 <script src="./script.js"></script>
 </html>
