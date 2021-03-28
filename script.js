@@ -1,15 +1,13 @@
 let numInserido = document.getElementById("entrada");
 let resultado = document.getElementById("resultado");
-let medPrimaria.value = document.getElementById("medidaPrimaria");
-let medSecundaria.value = document.getElementById("medidaSecundaria");
+let medPrimaria = document.getElementById("medidaPrimaria");
+let medSecundaria = document.getElementById("medidaSecundaria");
 
 
-/*numInserido.addEventListener("keyup",()=>{
-    resultado.value = numInserido.value
-})*/
+
 numInserido.addEventListener("keyup", temperatura);
-medPrimaria.value.addEventListener("change", temperatura);
-medSecundaria.value.addEventListener("change", temperatura);
+medPrimaria.addEventListener("change", temperatura);
+medSecundaria.addEventListener("change", temperatura);
 
 
 function temperatura(){

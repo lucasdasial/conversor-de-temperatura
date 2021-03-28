@@ -1,4 +1,4 @@
-*{outline: none; ; box-sizing: border-box;}
+*{outline: none; ; box-sizing: border-box; text-decoration: none;}
 body{
   width: 100vw;
   height: 100vh;
@@ -12,11 +12,12 @@ body{
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-direction: column;
  
 }
 .container{
-  width: 350px;
-  height: 150px;
+  width: 310px;
+  height: 190px;
   border: solid 3px white;;
   border-radius: 25px 5px;
   box-shadow: rgb(0, 255, 157) 5px 5px 5px;
@@ -36,3 +37,4 @@ h1{
   border-radius: 5px 2px;
 }
 #s{visibility: hidden;}
+ a {color: rgb(190, 190, 190) ;}
