@@ -1,47 +1,45 @@
 let numInserido = document.getElementById("entrada");
 let resultado = document.getElementById("resultado");
-let medPrimaria = document.getElementById("medidaPrimaria");
-let medSecundaria = document.getElementById("medidaSecundaria");
-let medPriValor, medidaSecValor;
+let medPrimaria.value = document.getElementById("medidaPrimaria");
+let medSecundaria.value = document.getElementById("medidaSecundaria");
+
 
 /*numInserido.addEventListener("keyup",()=>{
     resultado.value = numInserido.value
 })*/
 numInserido.addEventListener("keyup", temperatura);
-medPrimaria.addEventListener("change", temperatura);
-medSecundaria.addEventListener("change", temperatura);
-
-medPriValor = medPrimaria.value
-medidaSecValor = medSecundaria.value
+medPrimaria.value.addEventListener("change", temperatura);
+medSecundaria.value.addEventListener("change", temperatura);
 
 
 function temperatura(){
     //alert("trocou")
 
     //de celsius para:
-    if(medPriValor == "celsius" && medidaSecValor == "celsius"){
+    if(medPrimaria.value == "celsius" && medSecundaria.value == "celsius"){
         resultado.value = numInserido.value
-    }else if(medPriValor == "celsius" && medidaSecValor == "fahren"){
+    }else if(medPrimaria.value == "celsius" && medSecundaria.value == "fahren"){
         resultado.value = numInserido.value * 9/5 + 32
-    }else if(medPriValor == "celsius" && medidaSecValor == "kelvin"){
+    }else if(medPrimaria.value == "celsius" && medSecundaria.value == "kelvin"){
         resultado.value = numInserido.value + 273
     }
 
     //de fahren pra :
-    if(medPriValor == "fahren" && medidaSecValor == "celsius"){
+    if(medPrimaria.value == "fahren" && medSecundaria.value == "celsius"){
         resultado.value = (numInserido.value - 32) * 5/9
-    }else if(medPriValor == "fahren" && medidaSecValor == "fahren"){
+    }else if(medPrimaria.value == "fahren" && medSecundaria.value == "fahren"){
         resultado.value = numInserido.value 
-    }else if(medPriValor == "fahren" && medidaSecValor == "kelvin"){
+    }else if(medPrimaria.value == "fahren" && medSecundaria.value == "kelvin"){
         resultado.value = (numInserido.value - 32) * 5/9 + 273
     }
 
     //de kelvin para:
-    if(medPriValor == "kelvin" && medidaSecValor == "celsius"){
+    if(medPrimaria.value == "kelvin" && medSecundaria.value == "celsius"){
         resultado.value = numInserido.value - 273
-    }else if(medPriValor == "kelvin" && medidaSecValor == "fahren"){
+    }else if(medPrimaria.value == "kelvin" && medSecundaria.value == "fahren"){
         resultado.value = (numInserido.value -273) * 9/5 +32
-    }else if(medPriValor == "kelvin" && medidaSecValor == "kelvin"){
+    }else if(medPrimaria.value == "kelvin" && medSecundaria.value == "kelvin"){
         resultado.value = numInserido.value 
     }
+    
 }
