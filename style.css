@@ -25,6 +25,7 @@ body{
   flex-wrap: wrap;
   justify-content: center;
   align-items:flex-start;
+  margin-bottom: 15px;
 }
 h1{
   font-size: 25px;
