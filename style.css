@@ -32,9 +32,9 @@ h1{
 #medidaPrimaria, #medidaSecundaria, #entrada, #resultado{
   width: 130px;
   height: 30px;
-  margin: ;
+  padding:5px ;
   border: solid 1px grey;
   border-radius: 5px 2px;
 }
 #s{visibility: hidden;}
- a {color: rgb(61, 61, 61) ;}
+ a {color: rgb(94, 167, 235) ;}
