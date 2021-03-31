@@ -1,5 +1,5 @@
 # conversor-de-temperatura
- - minha resolção do desafio proposto na aula 1  na imersaoDev da Alura
+ - finalidade de por em pratica meus conhecimentos de dom e if do js
 ### link para visualizar o projeto: 
   https://luccasalves.github.io/conversor-de-temperatura/ 
  ## v2.0
